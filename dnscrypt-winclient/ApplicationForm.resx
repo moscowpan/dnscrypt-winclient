@@ -117,13 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="notifyIconContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>123, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="notifyIconContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>123, 17</value>
+  </data>
   <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAAAABMLAAATCwAAAAAAAAAA
@@ -192,14 +192,16 @@ DNSCrypt WinClient: https://github.com/Noxwizard/dnscrypt-winclient
 OpenDNS: http://opendns.com/
 
 Copyright (c) 2013
-License: http://opensource.org/licenses/MIT</value>
+License: http://opensource.org/licenses/MIT
+
+   Русский перевод: @moscowpan</value>
   </data>
-  <metadata name="serviceTooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="serviceTooltip.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>303, 17</value>
-  </metadata>
-  <metadata name="tooltip_plugin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </data>
+  <data name="tooltip_plugin.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>430, 17</value>
-  </metadata>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAAAAAABMLAAATCwAAAAAAAAAA

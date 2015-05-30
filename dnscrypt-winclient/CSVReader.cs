@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace dnscrypt_winclient
+namespace dnscrypt_winclient_ru
 {
 	/// <summary>
 	/// A simple CSV reader

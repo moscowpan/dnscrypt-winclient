@@ -3,7 +3,7 @@ using System.Management;
 using Microsoft.Win32;
 using System.Diagnostics;
 
-namespace dnscrypt_winclient
+namespace dnscrypt_winclient_ru
 {
 	class NetworkManager
 	{

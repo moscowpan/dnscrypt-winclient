@@ -14,7 +14,7 @@ using System.Windows.Forms;
 using Microsoft.Win32;
 
 
-namespace dnscrypt_winclient
+namespace dnscrypt_winclient_ru
 {
 	public partial class ApplicationForm : Form
 	{
@@ -514,11 +514,11 @@ namespace dnscrypt_winclient
 		{
 			if (this.ServiceInstalled)
 			{
-				this.serviceTooltip.Show("Uninstalls the DNSCrypt Windows service.", (Control)sender);
+				this.serviceTooltip.Show("Удаление DNSCrypt как сервис Windows.", (Control)sender);
 			}
 			else
 			{
-				this.serviceTooltip.Show("Installs DNSCrypt as a Windows service.", (Control)sender);
+				this.serviceTooltip.Show("Установка DNSCrypt как сервис Windows.", (Control)sender);
 			}
 		}
 
