@@ -269,7 +269,7 @@ namespace dnscrypt_winclient_ru
 			}
 			catch (Exception exception)
 			{
-				MessageBox.Show("There was an error changing the device's DNS server: " + exception.Message);
+				MessageBox.Show("Возникла ошибка при смене DNS сервера устрова:" + exception.Message);
 			}
 		}
 
@@ -288,7 +288,7 @@ namespace dnscrypt_winclient_ru
 					// Make sure the file exists before trying to launch it
 					if (!File.Exists(Directory.GetCurrentDirectory() + "\\dnscrypt-proxy.exe"))
 					{
-						MessageBox.Show("dnscrypt-proxy.exe was not found. It should be placed in the same directory as this program. If you do not have this file, you can download it from http://download.dnscrypt.org/dnscrypt-proxy/", "File not found");
+						MessageBox.Show("dnscrypt-proxy.exe не найден. Он должен располагаться в той же директории что эта программа.Если у вас нет этого файла, то вы можете скачать его по ссылке http://download.dnscrypt.org/dnscrypt-proxy/", "Файл не найден");
 						return;
 					}
 
@@ -321,7 +321,7 @@ namespace dnscrypt_winclient_ru
 					}
 				}
 
-				this.startstop_button.Text = "Stop";
+				this.startstop_button.Text = "Стоп";
 				this.CryptProcRunning = true;
 
 				//Don't allow plugin changes
@@ -349,7 +349,7 @@ namespace dnscrypt_winclient_ru
 
 				this.CryptProc = null;
 
-				this.startstop_button.Text = "Start";
+				this.startstop_button.Text = "Старт";
 				this.CryptProcRunning = false;
 
 				//Allow plugin changes
@@ -409,7 +409,7 @@ namespace dnscrypt_winclient_ru
 				}
 				catch (Exception exception)
 				{
-					MessageBox.Show("There was an error reverting your DNS settings: " + exception.Message);
+					MessageBox.Show("Возникла ошибка при получении ваших настрое для DNS: " + exception.Message);
 				}
 			}
 
@@ -419,7 +419,7 @@ namespace dnscrypt_winclient_ru
 				this.CryptHandle.Kill();
 				this.CryptProc = null;
 
-				this.startstop_button.Text = "Start";
+				this.startstop_button.Text = "Старт";
 				this.CryptProcRunning = false;
 			}
 
@@ -651,19 +651,19 @@ namespace dnscrypt_winclient_ru
 					if (sc.Status == ServiceControllerStatus.Running)
 					{
 						this.CryptProcRunning = true;
-						startstopText = "Stop";
+						startstopText = "Стоп";
 					}
 					else
 					{
 						this.CryptProcRunning = false;
-						startstopText = "Start";
+						startstopText = "Старт";
 					}
-					installText = "Uninstall";
+					installText = "Удалить";
 				}
 				else
 				{
 					this.ServiceInstalled = false;
-					installText = "Install";
+					installText = "Установить";
 
 					//See if it's a standalone process running
 					if (this.CryptHandle != null)
@@ -671,18 +671,18 @@ namespace dnscrypt_winclient_ru
 						if (this.CryptHandle.HasExited)
 						{
 							this.CryptProcRunning = false;
-							startstopText = "Start";
+							startstopText = "Старт";
 						}
 						else
 						{
 							this.CryptProcRunning = true;
-							startstopText = "Stop";
+							startstopText = "Стоп";
 						}
 					}
 					else
 					{
 						this.CryptProcRunning = false;
-						startstopText = "Start";
+						startstopText = "Старт";
 					}
 				}
 				this.updateButtonTexts(startstopText, installText);
